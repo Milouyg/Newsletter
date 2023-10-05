@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article{
+    padding: 1rem;
+    width:30rem;
+    height: 30rem;
+    border: .3rem solid #3085C3;
+    background: #5CD2E6;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

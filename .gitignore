@@ -1,0 +1,30 @@
+
+### Node an Vendor files
+node_modules/
+vendor/
+
+### Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+### OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+### Application
+docker/mysqldata
+public/phpMyAdmin/tmp
