@@ -1,5 +1,7 @@
 <?php
-if(empty($_POST['email'])){
+require_once("../functions/validation.php");
+
+if(empty($_POST['email'])){ 
     echo '400';
     return false;
 }else
@@ -29,22 +31,9 @@ if(empty($_POST['email'])){
     echo "Error: " . $e->getMessage();
     };
 
-function validation($value){
-    if(isset($_POST[$value]) && !empty($_POST[$value])){
-        if($value === "fname" || $value === "lname"){
-            $filter = htmlspecialchars($_POST[$value]);
-            $filter = trim($_POST[$value]);
-            $filter = preg_replace('/\s+/', '', $_POST[$value]);
-        }
-        if($value === "email"){
-            $filter = filter_var($_POST[$value],  FILTER_VALIDATE_EMAIL); 
-        }
-        return $filter;
-        
-    }else{
-        return false;
-    }
-}
+
+$mailRes = mail($email, "Aanmelding nieuwsbrief", "Klik op de link om je te activeren");
+var_dump($mailRes);
 
 
 

@@ -1,7 +1,6 @@
-
 <article class="article">
         <h1 class="newsletter">Api</h1>
-        <form class="form" method="POST" action="api.php">
+        <form class="form" method="POST" action="../../source/api.php">
             <select id="letters">
                 <option value="newsletter">Nieuwsbrief</option>
                 <option value="reviewmail">Reviewmail</option>
